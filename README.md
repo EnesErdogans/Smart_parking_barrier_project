@@ -45,7 +45,7 @@ The complete hardware diagram (created for the project) is shown below:
 
 ![System Line Diagram](docs/line_diagram.png)
 
-> Make sure this file is stored at: `docs/line_diagram.png`
+
 
 ---
 
@@ -140,15 +140,4 @@ This ensures:
 
 ---
 
-## 8. Project Folder Structure
 
-```text
-Smart-Parking-Barrier/
-├── Src/                     # Source files (main.c, rfid.c, oled.c, esp32.c…)
-├── Inc/                     # Header files
-├── Docs/
-│   ├── proposal.pdf
-│   ├── line_diagram.png
-├── Hardware/                # Schematics, sensor datasheets
-├── README.md
-└── .gitignore
