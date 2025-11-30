@@ -1,4 +1,5 @@
 # Smart Parking Barrier System  
+![Project Logo](docs/logo.png)
 ### Abdullah Gül University – Department of Electrical & Electronics Engineering  
 ### EE304 Project – STM32F407 Discovery Board  
 ### Contributors: Ahmet Emre Bilge • Fatih Mehmet Ayhan • Enes Erdoğan  
