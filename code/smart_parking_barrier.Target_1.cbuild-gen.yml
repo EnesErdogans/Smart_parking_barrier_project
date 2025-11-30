@@ -1,0 +1,391 @@
+build-gen:
+  board: 
+  compiler: AC6
+  device: STM32F407VGTx
+  generated-by: uVision version 5.43.1.0
+  processor:
+    core: Cortex-M4
+    dsp: on
+    endian: little
+    fpu: sp
+  add-path: 
+  components:
+    - component: ARM::CMSIS:CORE@6.1.1
+      from-pack: ARM::CMSIS@6.2.0
+    - component: ARM::CMSIS:DSP&Source@1.16.2
+      from-pack: ARM::CMSIS-DSP@1.16.2
+      files:
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/BasicMathFunctions/BasicMathFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/BasicMathFunctions/BasicMathFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/BayesFunctions/BayesFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/BayesFunctions/BayesFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/CommonTables/CommonTables.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/CommonTables/CommonTablesF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/ComplexMathFunctions/ComplexMathFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/ControllerFunctions/ControllerFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/DistanceFunctions/DistanceFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/DistanceFunctions/DistanceFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/FastMathFunctions/FastMathFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/FastMathFunctions/FastMathFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/FilteringFunctions/FilteringFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/FilteringFunctions/FilteringFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/InterpolationFunctions/InterpolationFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/InterpolationFunctions/InterpolationFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/MatrixFunctions/MatrixFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/MatrixFunctions/MatrixFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/SVMFunctions/SVMFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/SVMFunctions/SVMFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/StatisticsFunctions/StatisticsFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/StatisticsFunctions/StatisticsFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/SupportFunctions/SupportFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/SupportFunctions/SupportFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/TransformFunctions/TransformFunctions.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/TransformFunctions/TransformFunctionsF16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-DSP/1.16.2/Source/WindowFunctions/WindowFunctions.c
+          category: sourceC
+    - component: ARM::CMSIS:NN Lib@7.0.0
+      from-pack: ARM::CMSIS-NN@7.0.0
+      files:
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ActivationFunctions/arm_nn_activation_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ActivationFunctions/arm_relu6_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ActivationFunctions/arm_relu_q15.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ActivationFunctions/arm_relu_q7.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_add_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_add_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_mul_acc_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_mul_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_mul_s16_batch_offset.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_mul_s16_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_elementwise_mul_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_maximum_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/BasicMathFunctions/arm_minimum_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConcatenationFunctions/arm_concatenation_s8_w.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConcatenationFunctions/arm_concatenation_s8_x.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConcatenationFunctions/arm_concatenation_s8_y.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConcatenationFunctions/arm_concatenation_s8_z.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_1_x_n_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_1x1_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_1x1_s4_fast.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_1x1_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_even_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_get_buffer_sizes_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_get_buffer_sizes_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_get_buffer_sizes_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_wrapper_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_wrapper_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_fast_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_get_buffer_sizes_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_get_buffer_sizes_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_get_buffer_sizes_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_s4_opt.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_row_offset_s8_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s4_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_transpose_conv_get_buffer_sizes_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_transpose_conv_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ConvolutionFunctions/arm_transpose_conv_wrapper_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_batch_matmul_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_batch_matmul_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_get_buffer_sizes_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_get_buffer_sizes_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_per_channel_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_fully_connected_wrapper_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_vector_sum_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/FullyConnectedFunctions/arm_vector_sum_s8_s64.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/LSTMFunctions/arm_lstm_unidirectional_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/LSTMFunctions/arm_lstm_unidirectional_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_lstm_calculate_gate_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_lstm_calculate_gate_s8_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_lstm_step_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_lstm_step_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mult_nt_interleaved_t_even_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8_s32.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_transpose_conv_row_s8_s32.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mul_result_acc_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mul_result_acc_s8_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_per_ch_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s16_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s4.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_svdf_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_nntables.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/NNSupportFunctions/arm_s8_to_s16_unordered_with_offset.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PadFunctions/arm_pad_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PoolingFunctions/arm_avgpool_get_buffer_sizes_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PoolingFunctions/arm_avgpool_get_buffer_sizes_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PoolingFunctions/arm_avgpool_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PoolingFunctions/arm_avgpool_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PoolingFunctions/arm_max_pool_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/PoolingFunctions/arm_max_pool_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/ReshapeFunctions/arm_reshape_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SVDFunctions/arm_svdf_get_buffer_sizes_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SVDFunctions/arm_svdf_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SVDFunctions/arm_svdf_state_s16_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SoftmaxFunctions/arm_nn_softmax_common_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SoftmaxFunctions/arm_softmax_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SoftmaxFunctions/arm_softmax_s8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SoftmaxFunctions/arm_softmax_s8_s16.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/SoftmaxFunctions/arm_softmax_u8.c
+          category: sourceC
+        - file: D:/emb/ARM/CMSIS-NN/7.0.0/Source/TransposeFunctions/arm_transpose_s8.c
+          category: sourceC
+    - component: Keil::Device:CubeMX@1.0.0
+      from-pack: Keil::STM32F4xx_DFP@3.1.1
+    - component: Keil::File System&MDK:CORE@8.0.2
+      from-pack: Keil::MDK-Middleware@8.1.0
+      files:
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_common.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_config.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_debug.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_efs.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_fat.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_fat_elink.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_ioc.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_journal.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_mapi.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_os_rtos2.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_sys.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_time.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/FileSystem/Source/fs_version.c
+          category: sourceC
+        - file: D:/embededd_project/Smart_parking_barrier/code/RTE/File_System/FS_Config.h
+          category: header
+        - file: D:/embededd_project/Smart_parking_barrier/code/RTE/File_System/FS_Debug.h
+          category: header
+    - component: Keil::Network&MDK:CORE@8.1.0
+      from-pack: Keil::MDK-Middleware@8.1.0
+      files:
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_addr.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_base64.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_common.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_config.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_debug.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_icmp.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_icmp6.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_ip4.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_ip4_frag.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_ip6.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_ip6_frag.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_loopback.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_md5.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_mem.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_ping_core.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_sys.c
+          category: sourceC
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/Network/Source/net_version.c
+          category: sourceC
+        - file: D:/embededd_project/Smart_parking_barrier/code/RTE/Network/Net_Config.h
+          category: header
+        - file: D:/embededd_project/Smart_parking_barrier/code/RTE/Network/Net_Debug.h
+          category: header
+    - component: Keil::USB&MDK:CORE@8.0.0
+      from-pack: Keil::MDK-Middleware@8.1.0
+      files:
+        - file: D:/emb/Keil/MDK-Middleware/8.1.0/Components/USB/Source/usb_lib_ver.c
+          category: sourceC
+        - file: D:/embededd_project/Smart_parking_barrier/code/RTE/USB/USB_Debug.h
+          category: header
+  apis: 
+  groups:
+    - group: Source Group 1
+      files: 
