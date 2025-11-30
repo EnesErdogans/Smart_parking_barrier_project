@@ -8,8 +8,7 @@
 
 The **Smart Parking Barrier System** is an embedded automation project designed to control the access of electric vehicle (EV) charging areas.  
 The system ensures that **only authorized EV users** can access charging spots, preventing unauthorized parking and increasing charging efficiency.  
-The project is implemented on an **STM32F407 Discovery** microcontroller using **CMSIS register-level programming**. :contentReference[oaicite:0]{index=0}
-
+The project is implemented on an **STM32F407 Discovery** microcontroller using **CMSIS register-level programming**. 
 The system includes:
 
 - **RFID authorization** (MFRC522 – SPI)
@@ -35,8 +34,7 @@ Wireless commands via ESP-NOW allow remote open/close operations.
 This architecture demonstrates:
 - Multi-protocol communication (SPI, I²C, UART, PWM, ADC)
 - Real-time interrupt-based operation  
-- Modular and maintainable embedded software design :contentReference[oaicite:1]{index=1}
-
+- Modular and maintainable embedded software design 
 ---
 
 ## 3. System Line Diagram
@@ -116,8 +114,7 @@ Implements system logic as a state machine:
 | **CLOSING** | Closing after checks |
 | **OBSTACLE_DETECTED** | Safety interrupt – stops motor |
 
-The project follows a **cut-based (interrupt-driven)** design for real-time operation. :contentReference[oaicite:2]{index=2}
-
+The project follows a **cut-based (interrupt-driven)** design for real-time operation.
 ---
 
 ## 7. Register-Level GPIO Implementation
