@@ -147,9 +147,8 @@ Smart-Parking-Barrier/
 ├── Src/                     # Source files (main.c, rfid.c, oled.c, esp32.c…)
 ├── Inc/                     # Header files
 ├── Docs/
-│   ├── proposal_onepage.pdf
+│   ├── proposal.pdf
 │   ├── line_diagram.png
-│   └── register_notes.md
 ├── Hardware/                # Schematics, sensor datasheets
 ├── README.md
 └── .gitignore
