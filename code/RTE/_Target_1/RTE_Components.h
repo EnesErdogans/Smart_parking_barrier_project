@@ -9,6 +9,12 @@
 #ifndef RTE_COMPONENTS_H
 #define RTE_COMPONENTS_H
 
+/* ARM::CMSIS:RTOS2:Keil RTX5&Library@5.9.0 */
+#define RTE_CMSIS_RTOS2                 /* CMSIS-RTOS2 */
+#define RTE_CMSIS_RTOS2_RTX5            /* CMSIS-RTOS2 Keil RTX5 */
+/* Keil::CMSIS-Compiler:File Interface:MDK-MW File System@1.0.1 */
+#define RTE_CMSIS_Compiler_File_Interface        /* CMSIS-Compiler File Interface */
+#define RTE_CMSIS_Compiler_File_Interface_MDK_MW /* CMSIS-Compiler File Interface: MDK-Middleware File System */
 /* Keil::Device:CubeMX@1.0.0 */
 #define RTE_DEVICE_CUBE_MX
 #define CMSIS_device_header "stm32f4xx.h"
